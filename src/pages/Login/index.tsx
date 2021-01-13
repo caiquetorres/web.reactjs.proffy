@@ -1,45 +1,37 @@
 import React from 'react'
 
-import { useTheme } from '../../hooks/useTheme'
-
-import {
-    ContainerDiv,
-    LoginContentDiv,
-    LoginDiv,
-    LoginTitleH1,
-    LogoPresentationDiv
-} from './styles'
-
 import loginBackground from '../../assets/login-background.svg'
 import logo from '../../assets/proffy.svg'
+
+import './styles.scss'
 
 /**
  * The app's main login page
  */
 const Login: React.FC = (): JSX.Element => {
-    const { theme } = useTheme()
-
     return (
         //#region JSX
 
-        <ContainerDiv>
-            <LogoPresentationDiv theme={theme}>
+        <div className="container">
+            <div className="container--logo-container">
                 <img
-                    className="background-img"
+                    className="container--logo-container--background-img"
                     src={loginBackground}
                     alt="Login Background"
                 />
-                <div>
+                <div className="container--logo-container--logo">
                     <img src={logo} alt="Logo" />
                     <span>Sua plataforma de estudos online.</span>
                 </div>
-            </LogoPresentationDiv>
-            <LoginDiv theme={theme}>
-                <LoginContentDiv>
-                    <LoginTitleH1 theme={theme}>Fazer login</LoginTitleH1>
-                </LoginContentDiv>
-            </LoginDiv>
-        </ContainerDiv>
+            </div>
+            <div className="container--login-container">
+                <div className="container--login-container--content">
+                    <h1 className="container--login-container--content--title">
+                        Fazer login
+                    </h1>
+                </div>
+            </div>
+        </div>
 
         //#endregion
     )

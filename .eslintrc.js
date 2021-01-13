@@ -32,10 +32,10 @@ module.exports = {
                     '/hooks/',
                     '/contexts/',
                     '/navigations/',
-                    '/.styles/',
                     '/components/',
                     '/utils/',
                     '/assets/',
+                    '/.scss/',
                     [('parent', 'sibling', 'index')]
                 ],
                 alphabetize: { order: 'asc', ignoreCase: true }
