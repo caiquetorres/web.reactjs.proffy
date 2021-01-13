@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colors-another-purple: #9871f5;
+    --colors-purple: #8257e5;
+    --colors-little-purple: #774dd6;
+    --colors-purple-dark: #6842c2;
+    --colors-green: #04d361;
+    --colors-another-green: #24ef7f;
+    --colors-red: #e33d3d;
+
+    --back-lines-in-white: #e6e6f0;
+    --back-hover: #ebebf5;
+    --back-background: #f0f0f7;
+
+    --shapes-disabled: #dcdce5;
+
+    --texts-titles: #32264d;
+    --texts-base: #6a6180;
+    --texts-complements: #9c98a6;
+    --texts-input: #c1bccc;
+
+    --texts-in-purple-title: #ffffff;
+    --texts-in-purple-base: #d4c2ff;
+    --texts-in-purple-complement: #a380f6;
+}

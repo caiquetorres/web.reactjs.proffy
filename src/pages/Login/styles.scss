@@ -1,0 +1,61 @@
+@import '../../themes/global.scss';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    &--logo-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background: var(--colors-purple);
+
+        &--background-img {
+            position: absolute;
+            display: flex;
+            width: 75%;
+            height: 75%;
+        }
+
+        &--logo {
+            width: 50%;
+            height: 30em;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            span {
+                font-family: Poppins, sans-serif;
+                font-size: 1.5rem;
+                color: var(--texts-in-purple-base);
+            }
+        }
+    }
+
+    &--login-container {
+        width: 50%;
+        display: flex;
+        background: var(--back-background);
+        justify-content: center;
+        align-items: center;
+
+        &--content {
+            height: 25em;
+            width: 25em;
+        }
+
+        &--title {
+            font-family: Poppins, sans-serif;
+            color: var(--texts-titles);
+        }
+    }
+}
