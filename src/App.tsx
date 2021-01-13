@@ -1,8 +1,13 @@
 import React from 'react'
+
 import ThemeProvider from './contexts/themeContext'
+
 import Login from './pages/Login'
 
-function App() {
+/**
+ * The app component
+ */
+const App: React.FC = (): JSX.Element => {
     return (
         //#region JSC
 
@@ -13,5 +18,7 @@ function App() {
         //#endregion
     )
 }
+
+App.displayName = 'App'
 
 export default App
