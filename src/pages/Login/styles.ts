@@ -1,18 +1,18 @@
-@import '../../themes/global.scss';
+import styled from 'styled-components'
 
-.container {
+export const ContainerDiv = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 
-    &--logo-container {
+    & .logo-container {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50%;
-        background: var(--colors-purple);
+        background: ${(props) => props.theme.colors.purple};
 
         &--background-img {
             position: absolute;
@@ -30,20 +30,20 @@
             align-items: flex-start;
             flex-direction: column;
 
-            img {
+            & img {
                 max-width: 100%;
             }
 
-            span {
+            & span {
                 font-family: Poppins, sans-serif;
                 font-size: 1.2rem;
-                color: var(--texts-in-purple-base);
+                color: ${(props) => props.theme.textsInPurple.base};
                 max-width: 80%;
             }
         }
     }
 
-    &--login-container {
+    & .login-container {
         height: 50%;
         display: flex;
         background: var(--back-background);
@@ -58,41 +58,37 @@
             &--title {
                 font-size: 1.75rem;
                 font-family: Poppins, sans-serif;
-                color: var(--texts-titles);
+                color: ${(props) => props.theme.texts.titles};
+            }
+
+            &--app-input {
+                color: red;
             }
         }
     }
-}
 
-@media (min-width: 1100px) {
-    .container {
+    @media (min-width: 1100px) {
         flex-direction: row;
 
-        &--logo-container,
-        &--login-container {
+        & .logo-container,
+        & .login-container {
             width: 50%;
             height: 100%;
         }
 
-        &--logo-container--logo {
+        & .logo-container--logo {
             max-width: none;
             width: 50%;
 
-            span {
+            & span {
                 font-size: 1.5rem;
             }
         }
 
-        &--login-container--content {
+        & .login-container--content {
             height: 25rem;
             width: 25rem;
             padding: 0em;
-
-            &--title {
-                font-size: 1.75rem;
-                font-family: Poppins, sans-serif;
-                color: var(--texts-titles);
-            }
         }
     }
-}
+`

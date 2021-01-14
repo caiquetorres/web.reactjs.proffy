@@ -1,28 +1,25 @@
 import React, { InputHTMLAttributes } from 'react'
 
+import { ContainerInput } from './styles'
+
 /**
  * The app's main input component properties
  */
-export type InputProps = InputHTMLAttributes<HTMLDivElement>
+export type InputProps = InputHTMLAttributes<HTMLInputElement>
 
 /**
  * The app's main input component
  */
-const InputTests: React.FC<InputProps> = ({
-    ...rest
-}: InputProps): JSX.Element => {
+const Input: React.FC<InputProps> = ({ ...rest }: InputProps): JSX.Element => {
     return (
         //#region JSX
 
-        <div {...rest}>
-            ola
-            <input></input>
-        </div>
+        <ContainerInput {...rest}></ContainerInput>
 
         //#endregion
     )
 }
 
-InputTests.displayName = 'Input'
+Input.displayName = 'Input'
 
-export default InputTests
+export default Input
