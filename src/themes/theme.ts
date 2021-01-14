@@ -6,6 +6,7 @@ export const defaultTheme = {
         purpleDark: '#6842C2',
         green: '#04D361',
         anotherGreen: '#24EF7F',
+        greenDark: '#07b856',
         delete: '#E33D3D'
     },
     back: {
@@ -14,8 +15,6 @@ export const defaultTheme = {
         background: '#F0F0F7'
     },
     shapes: {
-        '01': '#FFFFFF',
-        '02': '#FAFAFC',
         disabled: '#DCDCE5'
     },
     texts: {

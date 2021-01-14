@@ -60,6 +60,15 @@ export const ContainerDiv = styled.div`
                 font-family: Poppins, sans-serif;
                 color: ${(props) => props.theme.texts.titles};
             }
+
+            &--app-button:enabled {
+                background: ${(props) => props.theme.colors.green};
+                color: #fff;
+
+                &:hover {
+                    background: ${(props) => props.theme.colors.greenDark};
+                }
+            }
         }
     }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Input from '../../components/Input'
+import Button from '../../components/Button'
 import { useTheme } from 'styled-components'
 
 import loginBackground from '../../assets/login-background.svg'
@@ -38,6 +38,9 @@ const Login: React.FC = (): JSX.Element => {
                     <h1 className="login-container--content--title">
                         Fazer login
                     </h1>
+                    <Button className="login-container--content--app-button">
+                        Entrar
+                    </Button>
                 </div>
             </div>
         </ContainerDiv>
