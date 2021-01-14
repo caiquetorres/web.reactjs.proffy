@@ -60,10 +60,6 @@ export const ContainerDiv = styled.div`
                 font-family: Poppins, sans-serif;
                 color: ${(props) => props.theme.texts.titles};
             }
-
-            &--app-input {
-                color: red;
-            }
         }
     }
 

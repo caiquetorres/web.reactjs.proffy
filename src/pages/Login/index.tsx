@@ -38,7 +38,6 @@ const Login: React.FC = (): JSX.Element => {
                     <h1 className="login-container--content--title">
                         Fazer login
                     </h1>
-                    <Input className="login-container--content--app-input" />
                 </div>
             </div>
         </ContainerDiv>
