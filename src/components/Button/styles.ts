@@ -5,7 +5,7 @@ export const ContainerButton = styled.button`
     outline: none;
 
     width: 100%;
-    padding: 20px 0;
+    padding: 1.5em 0;
     border-radius: 0.6em;
 
     font-family: Archivo, sans-serif;

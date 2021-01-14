@@ -6,7 +6,7 @@ export const ContainerDiv = styled.div`
     display: flex;
     flex-direction: column;
 
-    & .logo-container {
+    .logo-container {
         position: relative;
         display: flex;
         justify-content: center;
@@ -30,20 +30,21 @@ export const ContainerDiv = styled.div`
             align-items: flex-start;
             flex-direction: column;
 
-            & img {
+            img {
                 max-width: 100%;
             }
 
-            & span {
+            h2 {
                 font-family: Poppins, sans-serif;
                 font-size: 1.2rem;
+                font-weight: normal;
                 color: ${(props) => props.theme.textsInPurple.base};
                 max-width: 80%;
             }
         }
     }
 
-    & .login-container {
+    .login-container {
         height: 50%;
         display: flex;
         background: var(--back-background);
@@ -54,8 +55,10 @@ export const ContainerDiv = styled.div`
             height: 100%;
             width: 100%;
             padding: 1em;
+            display: flex;
+            flex-direction: column;
 
-            &--title {
+            h1 {
                 font-size: 1.75rem;
                 font-family: Poppins, sans-serif;
                 color: ${(props) => props.theme.texts.titles};
