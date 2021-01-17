@@ -43,12 +43,12 @@ const Login: React.FC = (): JSX.Element => {
 
                     <Input
                         className="login-container--content--app-input-email"
-                        placeholder="E-mail"
+                        label="E-mail"
                     />
 
                     <Input
                         className="login-container--content--app-input-password"
-                        placeholder="Senha"
+                        label="Senha"
                         type="password"
                     />
 
