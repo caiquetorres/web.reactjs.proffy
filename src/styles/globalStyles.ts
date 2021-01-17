@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
 
+/**
+ * The app's main global styles
+ */
 export const GlobalStyle = createGlobalStyle`
+    :root {
+        --default-border-radius: 0.6em;
+    }
+
     * {
         margin: 0;
         padding: 0;

@@ -22,7 +22,6 @@ export const ContainerDiv = styled.div`
         align-self: center;
 
         color: ${(props) => props.theme.texts.complements};
-        /* font-size: 1rem; */
     }
 
     input {

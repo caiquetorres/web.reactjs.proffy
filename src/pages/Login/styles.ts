@@ -64,6 +64,17 @@ export const ContainerDiv = styled.div`
                 color: ${(props) => props.theme.texts.titles};
             }
 
+            &--app-input-email {
+                border-top-left-radius: var(--default-border-radius);
+                border-top-right-radius: var(--default-border-radius);
+                border-bottom: none;
+            }
+
+            &--app-input-password {
+                border-bottom-left-radius: var(--default-border-radius);
+                border-bottom-right-radius: var(--default-border-radius);
+            }
+
             &--app-button:enabled {
                 background: ${(props) => props.theme.colors.green};
                 color: #fff;
