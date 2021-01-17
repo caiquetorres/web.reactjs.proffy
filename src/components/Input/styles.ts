@@ -1,65 +1,54 @@
 import styled from 'styled-components'
 
+import { motion } from 'framer-motion'
+
+export const PlaceholderLabel = styled(motion.label)``
+
+export const SelectedDiv = styled(motion.div)``
+
 export const ContainerDiv = styled.div`
     display: flex;
     position: relative;
 
     height: 4em;
-`
 
-export const PlaceholderLabel = styled.label`
-    pointer-events: none;
+    ${PlaceholderLabel} {
+        pointer-events: none;
 
-    display: flex;
+        display: flex;
 
-    position: absolute;
-    left: 1.6rem;
-    align-self: center;
+        position: absolute;
+        left: 1.6rem;
+        align-self: center;
 
-    font-family: Poppins, sans-serif;
-    color: ${(props) => props.theme.texts.complements};
-    font-size: 1rem;
+        color: ${(props) => props.theme.texts.complements};
+        /* font-size: 1rem; */
+    }
 
-    transition: 150ms;
-`
+    input {
+        display: flex;
 
-export const SelectedDiv = styled.div`
-    display: flex;
+        padding: 0 1.5em;
+        padding-top: 1.5em;
+        width: 100%;
 
-    position: absolute;
-    align-self: center;
+        outline: none;
+        border: 0.15em solid ${(props) => props.theme.back.linesInWhite};
 
-    background: ${(props) => props.theme.colors.purple};
-    border-radius: 0.1em;
+        color: ${(props) => props.theme.texts.base};
+    }
 
-    width: 0.2em;
-    height: 0em;
+    ${SelectedDiv} {
+        display: flex;
 
-    transition: 150ms;
-`
+        position: absolute;
+        align-self: center;
 
-export const ContainerInput = styled.input`
-    display: flex;
+        background: ${(props) => props.theme.colors.purple};
+        border-radius: 0.1em;
 
-    padding: 0 1.5em;
-    padding-top: 1.5em;
-    width: 100%;
+        width: 0.2em;
 
-    outline: none;
-    border: 0.15em solid ${(props) => props.theme.back.linesInWhite};
-
-    color: ${(props) => props.theme.texts.base};
-    font-family: Poppins, sans-serif;
-    font-size: 1rem;
-
-    &:focus {
-        & ~ ${PlaceholderLabel} {
-            transform: translateY(-1em);
-            font-size: 0.8rem;
-        }
-
-        & ~ ${SelectedDiv} {
-            height: 3em;
-        }
+        transition: 150ms;
     }
 `
