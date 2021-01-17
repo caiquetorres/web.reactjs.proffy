@@ -7,11 +7,13 @@ export const ContainerDiv = styled.div`
     flex-direction: column;
 
     .logo-container {
-        position: relative;
         display: flex;
+        flex: 1;
         justify-content: center;
         align-items: center;
-        height: 50%;
+
+        position: relative;
+
         background: ${(props) => props.theme.colors.purple};
 
         &--background-img {
@@ -45,11 +47,14 @@ export const ContainerDiv = styled.div`
     }
 
     .login-container {
-        height: 50%;
         display: flex;
-        background: var(--back-background);
         justify-content: center;
         align-items: center;
+
+        height: 50%;
+        min-height: 25em;
+
+        background: var(--back-background);
 
         &--content {
             height: 100%;
@@ -93,6 +98,8 @@ export const ContainerDiv = styled.div`
         & .login-container {
             width: 50%;
             height: 100%;
+
+            min-height: none;
         }
 
         & .logo-container--logo {
