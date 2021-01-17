@@ -4,6 +4,8 @@ import Button from '../../components/Button'
 import Input from '../../components/Input'
 import { useTheme } from 'styled-components'
 
+import { validateEmail, validatePassword } from '../../utils/validation'
+
 import loginBackground from '../../assets/login-background.svg'
 import logo from '../../assets/proffy.svg'
 
@@ -44,12 +46,24 @@ const Login: React.FC = (): JSX.Element => {
                     <Input
                         className="login-container--content--app-input-email"
                         label="E-mail"
+                        validators={[
+                            (email: string) => ({
+                                validate: validateEmail(email),
+                                message: 'E-mail inválido'
+                            })
+                        ]}
                     />
 
                     <Input
                         className="login-container--content--app-input-password"
                         label="Senha"
                         type="password"
+                        validators={[
+                            (password: string) => ({
+                                validate: validatePassword(password),
+                                message: 'Senha inválido'
+                            })
+                        ]}
                     />
 
                     <Button className="login-container--content--app-button">
